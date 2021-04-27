@@ -1,0 +1,41 @@
+{
+  "scripts": {
+    "init": "npm install",
+    "dev": "cross-env NODE_ENV=development nodemon app.js -w app.js -w routes/**/*.* -w services/**/*.* -w middlewares/**/*.*",
+    "dev:fe": "cd frontend && npm run dev",
+    "build:fe": "cd frontend && npm run build",
+    "ci": "whoami && npm run init && npm run build:fe",
+    "start": "pm2 restart ecosystem.config.js --env production"
+  },
+  "main": "app.js",
+  "devDependencies": {
+    "@sentry/node": "^4.5.3",
+    "body-parser": "^1.18.3",
+    "cross-env": "^5.2.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "fs-extra": "^7.0.1",
+    "http-errors": "^1.7.1",
+    "lodash": "^4.17.11",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.9",
+    "puppeteer": "^1.20.0",
+    "qs": "^6.7.0",
+    "gm": "^1.23.1",
+    "qr-image": "^3.2.0",
+    "log4js": "^2.5.3",
+    "vue-template-compiler": "^2.6.8"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "http-errors": "^1.7.1",
+    "jwt-simple": "^0.5.5",
+    "moment": "^2.23.0",
+    "node-poster-browser": "../node-poster-browser",
+    "node-poster-gm": "../node-poster-gm",
+    "object-hash": "^1.3.1",
+    "puppeteer-chromium-resolver": "^5.2.0",
+    "qiniu": "^7.2.1",
+    "url-parse": "^1.4.4"
+  }
+}

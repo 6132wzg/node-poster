@@ -1,0 +1,113 @@
+@import './styles/base.less';
+.poster-reserve {
+  position: relative;
+  height: 872px;
+  width: 750px;
+  padding: 40px;
+  overflow: hidden;
+  &__cover {
+    position: absolute;
+    width: 750px;
+    height: 872px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  &__bg {
+    position: absolute;
+    width: 750px;
+    height: 872px;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(20px);
+    transform: scale(2);
+    background-position: 50%;
+  }
+  &__course-img {
+    width: 670px;
+    height: 408px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    // img {
+    //   width: 100%;
+    //   height: 100%;
+    // } 
+  }
+  &__course-name {
+    margin-top: 40px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    font-size: 48px;
+    line-height: 67px;
+  }
+  &__course-time {
+    margin-top: 32px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+    line-height: 33px;
+    
+    .course-time {
+      &__icon {
+        margin-right: 16px;
+        vertical-align: middle;
+      }
+      &__text {
+        font-size: 28px;
+        vertical-align: middle;
+      }
+    }
+  }
+  &__shop-address {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+    
+    .shop-address {
+      &__icon {
+        margin-right: 16px;
+        vertical-align: middle;
+      }
+      &__text {
+        line-height: 28px;
+        font-size: 28px;
+        vertical-align: middle;
+      }
+    }
+  }
+  &__brand {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    padding: 10px;
+    .brand {
+      &__logo {
+        margin-right: 16px;
+        vertical-align: middle;
+      }
+      &__name {
+        color: rgba(255, 255, 255, 1);
+        vertical-align: middle;
+        font-size: 28px;
+        line-height: 32px;
+      }
+    }
+  }
+  .qrcode-content__qrcode {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    width: 124px;
+    height: 124px;
+    background-color: #ffffff;
+    img {
+      padding: 8px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

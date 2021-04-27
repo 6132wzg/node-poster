@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=750" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Book 预约成功分享页</title>
+    <link rel="stylesheet" href="./book_success.less" require-pack />
+    <link rel="stylesheet" href="./styles/book_success_theme.less" require-pack />
+  </head>
+  <body>
+    <div id="app">
+      <div class="card-box">
+        <section class="member">
+          <div class="member__hd">
+            <img
+              src="./images/default_avatar.png"
+              require-pack
+              class="member__img"
+              alt="member_image"
+            />
+            <div class="member__name">member_name</div>
+          </div>
+          <div class="member__text">
+            我刚刚在<span class="shop-name">shop_name</span>预约了一节课，
+            忍不住把它推荐给你，快来一起训练吧！
+          </div>
+        </section>
+        <section class="course">
+          <div class="course__img" alt="course_image"></div>
+          <h3 class="course__name">course_name</h3>
+          <div class="course__brand">
+            <img class="course__brand-img" alt="name" />
+            <p class="course__brand-name">brand_name</p>
+          </div>
+        </section>
+        <div class="card-box__divider"></div>
+        <section class="code">
+          <img class="code__img" />
+          <p class="code__text">长按二维码，一起来监督我</p>
+        </section>
+      </div>
+    </div>
+    <script src="./book_success.js" require-pack></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=750" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>课程完成分享页</title>
+    <link rel="stylesheet" href="./checkin.less" require-pack />
+    <link rel="stylesheet" href="./styles/checkin_theme.less" require-pack />
+  </head>
+  <body>
+    <div id="app">
+      <div class="card-box">
+          <section class="brand">
+                <img
+                require-pack
+                class="brand__img"
+                src="./images/default_avatar.png"
+                alt="brand_logo"
+              />
+              <h1 class="brand__name">brand_name</h1>
+          </section>
+        <section class="congratulate">
+          
+          <div class="congratulate__img-wrapper">
+            <img class='congratulate__img' src="./images/cup.png" require-pack>
+          </div>
+          <h2 class="congratulate__title">
+                恭喜你
+          </h2>
+          <h4 class="congratulate__subtitle">
+            完成 1 次“<span class="congratulate__course-name">course_name</span>”课
+          </h4>
+          <p class="congratulate__text">
+            继续加油鸭!
+          </p>
+
+        </section>
+
+        <div class="card-box__divider"></div>
+        <section class="code">
+          <!-- 二维码图片 -->
+          <img class="code__img" alt="code_image" />
+          <p class="code__text">长按二维码，一起来锻炼</p></section>
+        </section>
+      </div>
+    </div>
+
+    <script src="./checkin.js" require-pack></script>
+  </body>
+</html>

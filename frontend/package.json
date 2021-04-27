@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "init": "npm i",
+    "dev": "npm run init && rimraf ../public/* && rpack dev",
+    "build": "npm run init && rimraf ../public/* && rpack build"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.2",
+    "serve": "^10.1.1",
+    "st-require-pack": "^0.3.7",
+    "vue": "^2.6.8",
+    "vue-template-compiler": "^2.6.8"
+  },
+  "dependencies": {
+    "qs": "^6.7.0",
+    "lodash": "^4.17.11"
+  }
+}

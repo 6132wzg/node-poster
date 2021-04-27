@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  line-height: 1;
+  font-family: 'Source Han Sans CN', 'Helvetica Neue', Helvetica, 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+}
+
+body {
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+  background-image: url('../images/bg_mina-share.png');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.card-box {
+  width: 83%;
+  background-color: #fff;
+  overflow: hidden;
+
+  border-radius: 20px;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+
+  padding-top: 50px;
+
+  &__divider {
+    box-sizing: content-box;
+    border-top: 2px dashed #A2A2A6;
+    border-bottom: 1px dashed #A2A2A6;
+    position: relative;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: #414652;
+      top: 0;
+    }
+    &:before {
+      left: -5px;
+      transform: translate(-50%, -50%);
+    }
+    &:after {
+      right: -5px;
+      transform: translate(50%, -50%);
+    }
+  }
+}
+
+.code {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #fff;
+  text-align: center;
+  &__img {
+    display: inline-block;
+    width: 166px;
+    height: 166px;
+    background: #fff;
+  }
+  &__text {
+    font-size: 28px;
+    line-height: 40px;
+    color: #A2A2A6;
+    margin-top: 16px;
+  }
+}

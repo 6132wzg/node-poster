@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三体健康商城</title>
+    <link rel="stylesheet" href="/_static/css/dmall-m/bill.css?a313af98" require-pack="">
+  </head>
+  <body>
+    <div id="app">
+      <div class="user-qrcode-box">
+        <div class="header">
+          <img src="" alt="" class="user_img">
+          <span class="user_name"></span>
+          向你推荐
+        </div>
+        <img class="goods_img coverimage" alt="">
+        <div class="detail">
+          <div class="info">
+            <div class="name goods_name"></div>
+            <div class="price">
+              ￥
+              <span class="goods_price"></span>
+            </div>
+          </div>
+          <img class="qrcode code_img" alt="">
+        </div>
+      </div>
+    </div>
+
+    <script require-pack="">
+var $__injectScript__ = function (attrs, cb) { var s = document.createElement('script');for (var k in attrs) { s.setAttribute(k, attrs[k]); } document.head.appendChild(s); s.onload = function () {cb && cb(); } };
+var process = process || {};process.env = process.env || {};process.env.NODE_ENV = 'development';
+var GIT = {"branch":"master","commit":"f2b4df34d7ec1542217f270e985f896b6beb5706 project init"};
+var REQUIRE_CONFIG = {"paths":{"qs":"_static/js/chunk/qs.12c56caa","lodash":"_static/js/chunk/lodash.fc723a73","app-entry-dmall-m-bill":"_static/js/dmall-m/bill.js?0a9d1d74"},"shim":{},"map":{},"production":{"paths":{}}};  
+// -------------------
+REQUIRE_CONFIG.baseUrl = window.__require_public_url__ ||  "/";
+// -------------------
+console.log('[require-pack] dev mode,baseUrl is ',REQUIRE_CONFIG.baseUrl) 
+
+    $__injectScript__({src: '/_static/js/chunk/require-pack-runtime.5e23136d.js' },function(){ require.config(REQUIRE_CONFIG);  require([ 'app-entry-dmall-m-bill' ]); });
+</script>
+  <script src="http://localhost:35729/livereload.js"></script></body>
+</html>

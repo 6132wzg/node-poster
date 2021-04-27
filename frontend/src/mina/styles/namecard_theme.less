@@ -1,0 +1,31 @@
+@dy-bg: #24262f;
+@dy-light-bg: #2a2d36;
+@dy-light-c: #e8e8e9;
+@dy-c: #64666d;
+@dy-border: #161723;
+
+.card-box--dark-yellow {
+  .card-box {
+    background: @dy-bg;
+    .coach {
+      color: @dy-light-c;
+    }
+    .code {
+      background: @dy-bg;
+      &__text {
+        color: @dy-c;
+      }
+      &__img {
+        border: 20px solid @dy-border;
+      }
+    }
+    &__divider {
+      border-top: 2px dashed @dy-c;
+      border-bottom: 1px dashed @dy-c;
+    }
+    .shop {
+      color: @dy-light-c;
+      background: @dy-light-bg;
+    }
+  }
+}

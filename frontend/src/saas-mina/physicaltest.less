@@ -1,0 +1,133 @@
+@import "./styles/base.less";
+.st-physicaltest {
+  &__wrapper {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url(https://styd-frontend.oss-cn-shanghai.aliyuncs.com/images/minaPro/plugin/physical-test/physicaltest_bg%403x.png);
+    height: 730px;
+  }
+  &__header {
+    padding: 40px 40px 0;
+    &-wrapper {
+      padding-bottom: 24px;
+      display: flex;
+      border-bottom: 1px solid #ffffff;
+    }
+    &-avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 16px;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &-info {
+      display: flex;
+      flex-direction: column;
+      padding-top: 8px;
+    }
+    &-nickname {
+      font-size: 32px;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 1);
+      line-height: 32px;
+      margin-bottom: 8px;
+    }
+    &-currentdate {
+      font-size: 24px;
+      color: rgba(255, 255, 255, 1);
+      line-height: 33px;
+    }
+  }
+  &__content {
+    padding-bottom: 80px;
+    &-title {
+      width: 200px;
+      height: 48px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 32px;
+      margin: 32px auto 44px;
+      font-size: 28px;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 1);
+      line-height: 48px;
+      text-align: center;
+    }
+    &-indicators {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-indicator {
+      width: 33.3%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 80px;
+      &-name {
+        font-size: 28px;
+        color: rgba(255, 255, 255, 1);
+        line-height: 28px;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      &-content {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        &-value {
+          font-size: 64px;
+          font-weight: 500;
+          color: rgba(255, 255, 255, 1);
+          line-height: 85px;
+        }
+        &-unit {
+          font-size: 28px;
+          color: rgba(255, 255, 255, 1);
+          line-height: 28px;
+          margin-left: 8px;
+        }
+      }
+    }
+    &-indicator:nth-of-type(3 + n) {
+      margin-bottom: 0;
+    }
+  }
+  &__qrcode {
+    padding: 40px;
+    background: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: space-between;
+    &-content {
+      &-tip {
+        font-size: 32px;
+        font-weight: 500;
+        color: rgba(34, 34, 34, 1);
+        line-height: 32px;
+        margin-bottom: 24px;
+      }
+      &-shop {
+        display: flex;
+        &-img {
+          width: 48px;
+          height: 48px;
+          border-radius: 24px;
+          margin-right: 16px;
+        }
+        &-name {
+          font-size: 28px;
+          font-weight: 500;
+          color: rgba(34, 34, 34, 1);
+          line-height: 48px;
+        }
+      }
+    }
+    &-img {
+      width: 140px;
+      height: 140px;
+    }
+  }
+}

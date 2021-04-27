@@ -1,0 +1,81 @@
+@import './styles/base.less';
+
+.user {
+  padding: 0 56px 56px;
+  &__hd {
+    display: flex;
+    align-items: center;
+  }
+  &__avatar {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    margin-right: 30px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+  }
+  &__name {
+    flex: 1;
+    color: #fff;
+    font-size: 32px;
+  }
+  &__des {
+    color: #fff;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 10px;
+  }
+}
+
+.course {
+  .container;
+  padding-top: 10px;
+  padding-bottom: 45px;
+  position: relative;
+  &__img {
+    height: 296px;
+    border-radius: 6px;
+    background-size: cover;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+  }
+  &__name {
+    font-weight: 500;
+    margin-top: 30px;
+    font-size: 32px;
+    line-height: 1.5;
+    color: #000;
+  }
+  &__player-btn {
+    position: absolute;
+    left: 50%;
+    top: 114px;
+    width: 68px;
+    height: 68px;
+    margin-left: -34px;
+  }
+}
+
+.code {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 40px 46px 46px;
+  text-align: right;
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+  &__des {
+    font-size: 24px;
+    line-height: 30px;
+    color: rgba(0, 0, 0, 0.45);
+    margin-top: 10px;
+  }
+  &__img {
+    margin-left: 40px;
+    border: 1px solid #B9C1FF;
+    padding: 3px;
+  }
+}
+

@@ -1,0 +1,53 @@
+@import './styles/base.less';
+
+.brand {
+  .container;
+  display: flex;
+  &__img {
+    flex: 0 0 55px;
+    height: 55px;
+    border-radius: 50%;
+  }
+  &__name {
+    flex: 1;
+    line-height:55px;
+    color: #333;
+    font-size: 32px;
+    margin-left: 20px;
+  }
+}
+.congratulate {
+  .container;
+  margin-top: 68px;
+  padding-bottom: 68px;
+  &__img-wrapper {
+    text-align: center;
+  }
+  &__img {
+    display: inline-block;
+    width: 302px;
+  }
+  &__title,
+  &__subtitle,
+  &__text {
+    text-align: center;
+  }
+  &__title {
+    margin-top: 36px;
+    font-size: 40px;
+    color: #333;
+    line-height: 56px;
+  }
+  &__subtitle {
+    margin-top: 16px;
+    font-size: 32px;
+    line-height: 45px;
+    color: #333;
+  }
+  &__text {
+    margin-top: 14px;
+    font-size: 28px;
+    line-height: 40px;
+    color: #A2A2A6;
+  }
+}

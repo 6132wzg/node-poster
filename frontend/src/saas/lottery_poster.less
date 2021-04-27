@@ -1,0 +1,42 @@
+@import "./styles/base.less";
+
+.saas-poster {
+  position: relative;
+  padding-top: 100px;
+  height: 1334px;
+  background: url("./assets/images/lottery_poster.svg");
+  background-size: cover;
+  .section {
+    margin: 64px;
+    &__price {
+      margin-top: 178px;
+      font-size: 28px;
+      font-family: Arial-BoldMT;
+      color: #fff;
+      text-align: center;
+    }
+  }
+  .footer {
+    position: absolute;
+    bottom: 216px;
+    left: 50%;
+    margin-left: -200px;
+    &__content {
+      display: flex;
+    }
+    &__qrcode {
+      width: 320px;
+      height: 96px;
+      font-size: 32px;
+      font-family: PingFangSC-Regular;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 1);
+      line-height: 48px;
+      margin-right: 32px;
+    }
+    &__qrcode_url {
+      width: 400px;
+      height: 400px;
+    }
+  }
+}

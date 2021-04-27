@@ -1,0 +1,95 @@
+@import './styles/base.less';
+
+#app {
+  background-image: url('./images/bg_mina-share-namecard.png');
+}
+
+.card-box {
+  overflow: visible;
+  &--main {
+    overflow: hidden;
+  }
+  &__divider {
+    &::after {
+      background: #494745;
+    }
+  }
+}
+.member {
+  .container;
+  padding-bottom: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 20px;
+  &__hd {
+    display: flex;
+    line-height: 64px;
+  }
+  &__img {
+    border-radius: 50%;
+    flex: 0 0 140px;
+    width: 140px;
+    height: 140px;
+  }
+  &__text {
+    background: #86CB35;
+    padding: 20px 36px 20px 20px;
+    font-size: 28px;
+    line-height: 1.5;
+    color: #333;
+    border-radius: 10px;
+    margin-left: 30px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -18px;
+      top: 50%;
+      transform: translate(0, -50%);
+      z-index: 1;
+      width: 0; 
+      height: 0;
+      border-width: 10px;
+      border-style: solid;
+      border-color: transparent #86CB35 transparent transparent;
+    }
+  }
+}
+.coach {
+  text-align: center;
+  color: #333;
+  margin: 39px 0 0px;
+  &__name {
+    font-size: 48px;
+    font-weight: 500;
+  }
+  &__dsc{
+    font-size: 28px;
+    color: #64666D;
+    margin-top: 12px;
+  }
+}
+.code {
+  padding-top: 30px;
+  border-radius: 0 0 20px 20px;
+  background: #fff;
+  &__text {
+    margin-top: 30px;
+  }
+  &__img {
+    border: 20px solid #F2F2F2;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 380px;
+    height: 380px;
+  }
+}
+.shop {
+  padding: 23px 0;
+  background: #F7F7F7;
+  color: #64666D;
+  text-align: center;
+  font-size: 32px;
+}
+

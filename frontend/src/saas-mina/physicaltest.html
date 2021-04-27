@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=750" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>分享海报</title>
+    <link rel="stylesheet" href="./physicaltest.less" require-pack />
+  </head>
+  <body>
+    <div class="st-physicaltest">
+      <div class="st-physicaltest__wrapper">
+        <div class="st-physicaltest__header">
+          <div class="st-physicaltest__header-wrapper">
+            <div class="st-physicaltest__header-avatar">
+              <img id="avatar" require-pack />
+            </div>
+            <div class="st-physicaltest__header-info">
+              <div class="st-physicaltest__header-nickname" id="nickname"></div>
+              <div class="st-physicaltest__header-currentdate" id="currentdate"></div>
+            </div>
+          </div>
+        </div>
+        <div class="st-physicaltest__content">
+          <div class="st-physicaltest__content-title" id="differ_days"></div>
+          <div class="st-physicaltest__content-indicators" id="indicators"></div>
+        </div>
+      </div>
+      <div class="st-physicaltest__qrcode">
+        <div class="st-physicaltest__qrcode-content">
+          <div class="st-physicaltest__qrcode-content-tip" id="description"></div>
+          <div class="st-physicaltest__qrcode-content-shop">
+            <img class="st-physicaltest__qrcode-content-shop-img" alt="" srcset="" require-pack id="logo"/>
+            <div class="st-physicaltest__qrcode-content-shop-name" id="shop_name"></div>
+          </div>
+        </div>
+        <div class="st-physicaltest__qrcode-img">
+          <img id="qrcode" width="140" height="140" alt="小程序码" require-pack />
+        </div>
+      </div>
+    </div>
+    <script src="./physicaltest.js" require-pack></script>
+  </body>
+</html>

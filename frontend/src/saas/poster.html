@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分享海报</title>
+    <link rel="stylesheet" href="./poster.less" require-pack />
+</head>
+<body>
+  <div class="saas-poster">
+    <header class="header">
+      <img
+      class="header__brand_logo brand_logo"
+      alt="brand_logo" />
+      <label class="header__brand_name brand_name">brand_name</label>
+    </header>
+    <section class="section">
+      <p class="section__price"><span class="section__price-info price">price</span><label class="section__price-unit">元</label></p>
+      <label class="section__tip">送你一张优惠券，快来一起锻炼吧！</label>
+    </section>
+    <footer class="footer">
+      <div class="footer__content">
+        <p class="footer__qrcode">长按右侧二维码<br/>领取专属于你的优惠！</p>
+        <img
+          class="footer__qrcode_url qrcode_url"
+          alt="qrcode_url" />
+      </div>  
+    </footer>
+  </div>
+  <script src="./poster.js" require-pack></script>
+</body>
+</html>

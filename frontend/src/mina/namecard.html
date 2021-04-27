@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=750" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>分享名片</title>
+    <link rel="stylesheet" href="./namecard.less" require-pack />
+    <link rel="stylesheet" href="./styles/namecard_theme.less" require-pack />
+  </head>
+  <body>
+    <div id="app">
+      <div class="card-box">
+        <div class="card-box--main">
+          <section class="member">
+            <div class="member__hd">
+              <img
+                src="./images/default_avatar.png"
+                require-pack
+                class="member__img"
+                alt="member_image"
+              />
+              <div class="member__text">
+              <span class="member__name">member_name</span>：给你推荐个人，Ta特别靠谱～
+            </div>
+            </div>
+          </section>
+          <div class="card-box__divider"></div>
+          <section class="coach">
+            <h3 class="coach__name">coach_name</h3>
+            <h4 class="coach__dsc">高级私人教练</h4>
+          </section>
+          
+          <section class="code">
+            <img class="code__img" />
+            <p class="code__text">·长按或扫一扫了解Ta·</p>
+          </section>
+          <section class="shop">
+            <p class="shop__name">shop_name</p>
+          </section>
+        </div>
+        
+      </div>
+    </div>
+    <script src="./namecard.js" require-pack></script>
+  </body>
+</html>

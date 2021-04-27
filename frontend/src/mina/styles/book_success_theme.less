@@ -1,0 +1,38 @@
+@dy-bg: #1d1f2a;
+@dy-light-c: #e8e8e9;
+@dy-c: #a2a2a6;
+@dy-dark-c: #acacb0;
+@dy-border: #64666d;
+
+.card-box--dark-yellow {
+  .card-box {
+    background: @dy-bg;
+    &__divider {
+      border-top: 2px dashed @dy-border;
+      border-bottom: 1px dashed @dy-border;
+    }
+    .member {
+      &__name {
+        color: @dy-light-c;
+      }
+      &__text {
+        color: @dy-c;
+      }
+    }
+    .course {
+      background: @dy-bg;
+      &__name {
+        color: @dy-light-c;
+      }
+      &__brand {
+        color: @dy-dark-c;
+      }
+    }
+    .code {
+      background: @dy-bg;
+      &__text {
+        color: @dy-border;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分享海报</title>
+    <link rel="stylesheet" href="/_static/css/saas-mina/groupbuy.css?e81e1237" require-pack="">
+</head>
+<body>
+  <div class="header">
+    <div class="img-wrap">
+      <div class="img-top" require-pack="">
+        <div class="img-top__box">
+          <img require-pack="" class="box__img" alt="图片">
+        </div>
+      </div>
+      <div class="img-bottom" require-pack="">
+        <h2 class="course-title"></h2>
+        <div class="course-content">
+          <div class="group-label">
+            <p class="group-label__bg" require-pack=""></p>
+            <p class="group-label__num"></p>
+          </div>
+          <div class="group-money">
+            <span class="money__icon">￥</span>
+            <span class="money__num font-number"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="brand__info">
+      <div class="info-logo">
+        <img class="info-logo__img" require-pack="">
+        <span class="info-logo__title"></span>
+      </div>
+      <div class="info__tip">
+        长按识别二维码，一起参与吧
+      </div>
+    </div>
+    <div class="qrcode">
+      <img class="qrcode__img" require-pack="" alt="">
+    </div>
+  </footer>
+  <script require-pack="">
+var $__injectScript__ = function (attrs, cb) { var s = document.createElement('script');for (var k in attrs) { s.setAttribute(k, attrs[k]); } document.head.appendChild(s); s.onload = function () {cb && cb(); } };
+var process = process || {};process.env = process.env || {};process.env.NODE_ENV = 'development';
+var GIT = {"branch":"master","commit":"f2b4df34d7ec1542217f270e985f896b6beb5706 project init"};
+var REQUIRE_CONFIG = {"paths":{"qs":"_static/js/chunk/qs.12c56caa","lodash":"_static/js/chunk/lodash.fc723a73","app-entry-saas-mina-groupbuy":"_static/js/saas-mina/groupbuy.js?12bc21cd"},"shim":{},"map":{},"production":{"paths":{}}};  
+// -------------------
+REQUIRE_CONFIG.baseUrl = window.__require_public_url__ ||  "/";
+// -------------------
+console.log('[require-pack] dev mode,baseUrl is ',REQUIRE_CONFIG.baseUrl) 
+
+    $__injectScript__({src: '/_static/js/chunk/require-pack-runtime.5e23136d.js' },function(){ require.config(REQUIRE_CONFIG);  require([ 'app-entry-saas-mina-groupbuy' ]); });
+</script>
+<script src="http://localhost:35729/livereload.js"></script></body>
+</html>

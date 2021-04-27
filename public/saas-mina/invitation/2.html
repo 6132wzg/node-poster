@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分享海报</title>
+    <link rel="stylesheet" href="/_static/css/saas-mina/invitation/invitation.css?0497bc2a" require-pack="">
+</head>
+<body>
+  <div class="poster-invitation poster-invitation-2">
+    <img class="poster-invitation-2__bg" src="/_static/res/saas-mina/assets/images/invite-bg-2.png?8586ec8b" width="750" require-pack="" height="1334" alt="背景">
+    <img class="poster-invitation-2__brand-logo" width="100" height="100" alt="品牌LOGO">
+    <p class="poster-invitation-2__value">
+      <span class="poster-invitation-2__value-number font-number"></span>
+      元
+    </p>
+    <div class="poster-invitation-2__qrcode-content">
+      <img class="poster-invitation-2__qrcode" width="160" height="160" alt="小程序码">
+      <p class="poster-invitation-2__text">
+        <span class="poster-invitation-2__text-name"></span><br>
+        <span class="poster-invitation-2__text-des">刷我的码，领优惠券</span>
+      </p>
+    </div>
+  </div>
+  <script require-pack="">
+var $__injectScript__ = function (attrs, cb) { var s = document.createElement('script');for (var k in attrs) { s.setAttribute(k, attrs[k]); } document.head.appendChild(s); s.onload = function () {cb && cb(); } };
+var process = process || {};process.env = process.env || {};process.env.NODE_ENV = 'development';
+var GIT = {"branch":"master","commit":"f2b4df34d7ec1542217f270e985f896b6beb5706 project init"};
+var REQUIRE_CONFIG = {"paths":{"qs":"_static/js/chunk/qs.12c56caa","lodash":"_static/js/chunk/lodash.fc723a73","app-entry-saas-mina-invitation/2":"_static/js/saas-mina/invitation/2.js?3ca606e0"},"shim":{},"map":{},"production":{"paths":{}}};  
+// -------------------
+REQUIRE_CONFIG.baseUrl = window.__require_public_url__ ||  "/";
+// -------------------
+console.log('[require-pack] dev mode,baseUrl is ',REQUIRE_CONFIG.baseUrl) 
+
+    $__injectScript__({src: '/_static/js/chunk/require-pack-runtime.5e23136d.js' },function(){ require.config(REQUIRE_CONFIG);  require([ 'app-entry-saas-mina-invitation/2' ]); });
+</script>
+<script src="http://localhost:35729/livereload.js"></script></body>
+</html>

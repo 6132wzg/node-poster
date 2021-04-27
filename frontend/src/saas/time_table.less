@@ -1,0 +1,262 @@
+@import "./styles/base.less";
+
+.saas-time_table-poster {
+  width: 2480px;
+  min-height: 2500px;
+  padding-top: 106px;
+  background: linear-gradient(
+    129deg,
+    rgba(23, 23, 73, 1) 0%,
+    rgba(23, 23, 73, 1) 100%
+  );
+  // zoom: 0.5;
+  &-bg {
+    position: absolute;
+    top: 0;
+    width: 2480px;
+    height: 1395px;
+    .bg-image {
+      width: 2480px;
+      height: 1395px;
+      background-color: #ffffff;
+    }
+    .bg-radian {
+      position: absolute;
+      width: 2480px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+    .bg-default {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      &.is_default {
+        background: linear-gradient(
+          129deg,
+          rgba(255, 72, 72, 0.75) 0%,
+          rgba(223, 30, 82, 0.75) 100%
+        );
+      }
+    }
+  }
+  &-content {
+    width: 100%;
+    padding: 0 88px;
+    position: relative;
+    z-index: 1;
+    .time_table-info {
+      width: 100%;
+      height: 320px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      .brand-logo-img {
+        width: 226px;
+        height: 226px;
+      }
+      .shop-desc {
+        color: #ffffff;
+        text-align: right;
+        .shop-name {
+          font-size: 66px;
+          margin-bottom: 34px;
+          font-weight: 500;
+        }
+        .range-time {
+          font-size: 52px;
+        }
+      }
+      .time_table-title {
+        width: 1134px;
+        height: 160px;
+        position: absolute;
+        bottom: -80px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background: linear-gradient(
+          270deg,
+          rgba(255, 72, 72, 1) 0%,
+          rgba(253, 132, 48, 1) 100%
+        );
+        border-radius: 80px;
+        color: #ffffff;
+        font-size: 86px;
+        line-height: 160px;
+        text-align: center;
+        font-weight: 600;
+      }
+    }
+    .time_table-content {
+      width: 2304px;
+      min-height: 1334px;
+      padding: 146px 82px 120px;
+      background-color: #ffffff;
+      border-radius: 40px;
+      table {
+        width: 2140px;
+        tr {
+          width: 2140px;
+          display: flex;
+          box-sizing: border-box;
+          td {
+            flex: 1;
+          }
+        }
+        thead {
+          font-size: 52px;
+          font-weight: 500;
+          color: rgba(0, 0, 0, 0.6);
+          text-align: center;
+          td {
+            padding-bottom: 66px;
+          }
+        }
+        .table-body {
+          width: 2140px;
+          box-sizing: border-box;
+          color: rgba(0, 0, 0, 0.7);
+          display: block;
+          border-top: 3px solid #E6E9EF;
+          border-left: 3px solid #E6E9EF;
+          .table-time {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 52px;
+            line-height: 72px;
+          }
+          tr {
+            border-bottom: 3px solid #E6E9EF;
+            td {
+              border-right: 3px solid #E6E9EF;
+              .table-block {
+                width: 100%;
+                height: 280px;
+                padding-left: 34px;
+                position: relative;
+                box-sizing: border-box;
+                &:not(:last-child) {
+                  border-bottom: 3px solid #E6E9EF;
+                }
+                &-nodata {
+                  width: 132px;
+                  height: 114px;
+                  background: url(./assets/images/timeTable_noData.png)
+                    no-repeat;
+                  background-size: 100% 100%;
+                  position: absolute;
+                  left: 50%;
+                  top: 50%;
+                  margin: -50px 0 0 -50px;
+                }
+                .course-name {
+                  width: 200px;
+                  height: 122px;
+                  line-height: 46px;
+                  text-overflow: -o-ellipsis-lastline;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 2;
+                  line-clamp: 2;
+                  -webkit-box-orient: vertical;
+                  padding: 24px 0 14px;
+                  font-size: 32px;
+                  font-weight: 500;
+                }
+                .strength-level {
+                  height: 50px;
+                  .star {
+                    display: inline-block;
+                    width: 33px;
+                    height: 33px;
+                    background: url(./assets/images/timeTable_star.png)
+                      no-repeat;
+                    background-size: 100% 100%;
+                  }
+                }
+                .coach-name {
+                  width: 200px;
+                  height: 50px;
+                  font-size: 26px;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                  color: rgba(0, 0, 0, 0.8);
+                }
+                .court-name {
+                  width: 100%;
+                  height: 50px;
+                  position: absolute;
+                  font-size: 26px;
+                  color: #ffffff;
+                  line-height: 50px;
+                  padding-left: 34px;
+                  box-sizing: border-box;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  background-color: #15155b;
+                }
+              }
+              &:nth-child(2n) {
+                .court-name {
+                  background-color: #ff4848;
+                }
+              }
+            }
+          }
+
+          &.no-coach {
+            .table-block {
+              height: 230px;
+              .coach-name {
+                height: 0px;
+              }
+            }
+          }
+          &.no-strength {
+            .table-block {
+              height: 230px;
+              .strength-level {
+                height: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .time_table-footer {
+      width: 100%;
+      height: 462px;
+      display: flex;
+      margin-top: 108px;
+      .qrcode {
+        margin-right: 104px;
+        .qrcode-img {
+          width: 318px;
+          height: 318px;
+        }
+      }
+      .tips-title {
+        font-size: 60px;
+        font-weight: 500;
+        color: #ffffff;
+        margin-bottom: 26px;
+      }
+      .tips-info {
+        color: #ffffff;
+        white-space: pre-line;
+        font-size: 40px;
+        line-height: 56px;
+      }
+    }
+  }
+}

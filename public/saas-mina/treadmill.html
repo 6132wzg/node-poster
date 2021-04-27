@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分享海报</title>
+    <link rel="stylesheet" href="/_static/css/saas-mina/treadmill.css?e33957fc" require-pack="">
+</head>
+<body>
+  <div class="st-treadmill">
+    <div class="st-treadmill__cover-container">
+      <img class="st-treadmill__cover-map" require-pack="" src="/_static/res/saas-mina/assets/images/treadmill-bg.png?fbb3a85e">
+      <p id="date" class="st-treadmill__cover-date"></p>
+    </div>
+    <div class="st-treadmill__cover-pic" id="cover_map">
+        <img class="st-treadmill__cover-line" id="line" require-pack="">
+    </div>
+    <div class="st-treadmill__header">
+      <div class="st-treadmill__header-box">
+        <div class="st-treadmill__header-data__title">
+          <div class="st-treadmill__header-box__map" id="box_map">
+              <span class="fz-24 c-text" id="header_date1"></span>
+              <span class="fz-24 c-text"> - 路线长度 <span id="length"></span>，完成度
+              <span id="completionDegree1"></span>%
+              <div class="st-treadmill__header-box__distance font-number">
+                <span id="distance1" class="st-treadmill__header-box__distance-title"></span><span>km</span>
+              </div>
+          </span></div>
+          <div class="st-treadmill__header-box__target" id="box_target">
+              <span class="fz-24 c-text" id="header_date2"></span>
+              <span class="fz-24 c-text"> - <span id="box_target-title"></span></span>
+              <div class="st-treadmill__header-box__distance font-number">
+                <span id="distance2" class="st-treadmill__header-box__distance-title"></span><span>km</span>
+              </div>
+          </div>
+          <div class="st-treadmill__header-box__run" id="box_run">
+              <span class="fz-24 c-text" id="header_date3"></span>
+              <span class="fz-24 c-text"> - 快速开始 </span>
+              <div class="st-treadmill__header-box__distance font-number">
+                  <span id="distance3" class="st-treadmill__header-box__distance-title"></span><span>km</span>
+                </div>
+          </div>
+        </div>
+        <div class="st-treadmill__header-logo">
+          <img src="data:image/png;base64,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" require-pack="" class="st-treadmill__header-logo__bg">
+          <img require-pack="" class="st-treadmill__header-logo__img" id="avatar">
+        </div>
+        <div class="st-treadmill__header-title">
+          <div class="fz-24 c-title text-ellipsis font-medium st-treadmill__header-title-name" id="nickname"></div>
+          <div class="fz-24 c-text-light st-treadmill__header-title__address">
+            <span id="address"></span>
+          </div>
+        </div>
+      </div>
+      <div class="st-treadmill__header-data">
+        <div class="st-treadmill__header-data__content">
+          <div class="st-treadmill__header-data__content-item">
+            <div class="fz-40 font-number c_success" id="duration"></div>
+            <div class="fz-24 c-text">时长</div>
+          </div>
+          <div class="st-treadmill__header-data__content-item">
+            <div class="fz-40 font-number c_warning" id="kcal"></div>
+            <div class="fz-24 c-text">热量(Kcal)</div>
+          </div>
+          <div class="st-treadmill__header-data__content-item">
+            <div class="fz-40 font-number c_primary" id="speed"></div>
+            <div class="fz-24 c-text">配速</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="st-spacer st_hide" height="20rpx" id="spacer"></div>
+    <div class="st-treadmill__mission st_hide" id="progress">
+      <span class="fz-28 c-title font-medium" id="target_type">距离目标</span>
+      <div class="st-treadmill__mission-progress">
+        <div class="st-progress" style="height: 76px;">
+          <div class="st-progress__wrapper">
+            <div class="st-progress__inner" id="progressValue">
+              <div class="st-progress__inner-tip fz-22" id="progressTip">
+                <span id="completionNum"></span>
+                <div class="st-progress__inner-tip__arrow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="st-treadmill__mission-progress__text babes-font fz-26"><div class="st-treadmill__mission-progress__text-unit"><span class="target_value"></span><span class="unit"></span></div></div>
+      </div>
+      <div class="st-treadmill__mission-info c-text-light fz-24">
+        很遗憾没能完成本次目标，继续加油！
+      </div>
+    </div>
+    <div class="st-spacer" height="20px"></div>
+    <div class="st-treadmill__echarts-container">
+      <img class="st-treadmill__echarts-container__img" require-pack="" id="echart">
+    </div>
+    <div class="st-treadmill__code">
+      <img class="st-treadmill__code-img" id="code" require-pack="">
+      <div></div>
+      <p class="st-treadmill__code-text st-treadmill__code-text1">开启有氧设备一起来运动吧</p><br>
+      <p class="st-treadmill__code-text">长按二维码加入<span id="mp-name"></span></p>
+    </div>
+  </div>
+  <script require-pack="">
+var $__injectScript__ = function (attrs, cb) { var s = document.createElement('script');for (var k in attrs) { s.setAttribute(k, attrs[k]); } document.head.appendChild(s); s.onload = function () {cb && cb(); } };
+var process = process || {};process.env = process.env || {};process.env.NODE_ENV = 'development';
+var GIT = {"branch":"master","commit":"f2b4df34d7ec1542217f270e985f896b6beb5706 project init"};
+var REQUIRE_CONFIG = {"paths":{"qs":"_static/js/chunk/qs.12c56caa","lodash":"_static/js/chunk/lodash.fc723a73","app-entry-saas-mina-treadmill":"_static/js/saas-mina/treadmill.js?311144e7"},"shim":{},"map":{},"production":{"paths":{}}};  
+// -------------------
+REQUIRE_CONFIG.baseUrl = window.__require_public_url__ ||  "/";
+// -------------------
+console.log('[require-pack] dev mode,baseUrl is ',REQUIRE_CONFIG.baseUrl) 
+
+    $__injectScript__({src: '/_static/js/chunk/require-pack-runtime.5e23136d.js' },function(){ require.config(REQUIRE_CONFIG);  require([ 'app-entry-saas-mina-treadmill' ]); });
+</script>
+<script src="http://localhost:35729/livereload.js"></script></body>
+</html>

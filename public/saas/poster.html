@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分享海报</title>
+    <link rel="stylesheet" href="/_static/css/saas/poster.css?d1605075" require-pack="">
+</head>
+<body>
+  <div class="saas-poster">
+    <header class="header">
+      <img class="header__brand_logo brand_logo" alt="brand_logo">
+      <label class="header__brand_name brand_name">brand_name</label>
+    </header>
+    <section class="section">
+      <p class="section__price"><span class="section__price-info price">price</span><label class="section__price-unit">元</label></p>
+      <label class="section__tip">送你一张优惠券，快来一起锻炼吧！</label>
+    </section>
+    <footer class="footer">
+      <div class="footer__content">
+        <p class="footer__qrcode">长按右侧二维码<br>领取专属于你的优惠！</p>
+        <img class="footer__qrcode_url qrcode_url" alt="qrcode_url">
+      </div>  
+    </footer>
+  </div>
+  <script require-pack="">
+var $__injectScript__ = function (attrs, cb) { var s = document.createElement('script');for (var k in attrs) { s.setAttribute(k, attrs[k]); } document.head.appendChild(s); s.onload = function () {cb && cb(); } };
+var process = process || {};process.env = process.env || {};process.env.NODE_ENV = 'development';
+var GIT = {"branch":"master","commit":"f2b4df34d7ec1542217f270e985f896b6beb5706 project init"};
+var REQUIRE_CONFIG = {"paths":{"qs":"_static/js/chunk/qs.12c56caa","lodash":"_static/js/chunk/lodash.fc723a73","app-entry-saas-poster":"_static/js/saas/poster.js?10b2ef73"},"shim":{},"map":{},"production":{"paths":{}}};  
+// -------------------
+REQUIRE_CONFIG.baseUrl = window.__require_public_url__ ||  "/";
+// -------------------
+console.log('[require-pack] dev mode,baseUrl is ',REQUIRE_CONFIG.baseUrl) 
+
+    $__injectScript__({src: '/_static/js/chunk/require-pack-runtime.5e23136d.js' },function(){ require.config(REQUIRE_CONFIG);  require([ 'app-entry-saas-poster' ]); });
+</script>
+<script src="http://localhost:35729/livereload.js"></script></body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>平台化小程序二维码</title>
+    <link rel="stylesheet" href="/_static/css/saas-mina/platform/mina-qrcode.css?64b3d24a" require-pack="">
+  </head>
+  <body>
+    <div class="saas-poster">
+      <img class="qrcode_url" alt="qrcode_url">
+      <img class="brand_logo" alt="brand_logo">
+    </div>
+  <script src="http://localhost:35729/livereload.js"></script></body>
+  <script require-pack="">
+var $__injectScript__ = function (attrs, cb) { var s = document.createElement('script');for (var k in attrs) { s.setAttribute(k, attrs[k]); } document.head.appendChild(s); s.onload = function () {cb && cb(); } };
+var process = process || {};process.env = process.env || {};process.env.NODE_ENV = 'development';
+var GIT = {"branch":"master","commit":"f2b4df34d7ec1542217f270e985f896b6beb5706 project init"};
+var REQUIRE_CONFIG = {"paths":{"qs":"_static/js/chunk/qs.12c56caa","lodash":"_static/js/chunk/lodash.fc723a73","app-entry-saas-mina-platform/mina-qrcode":"_static/js/saas-mina/platform/mina-qrcode.js?09cfe76b"},"shim":{},"map":{},"production":{"paths":{}}};  
+// -------------------
+REQUIRE_CONFIG.baseUrl = window.__require_public_url__ ||  "/";
+// -------------------
+console.log('[require-pack] dev mode,baseUrl is ',REQUIRE_CONFIG.baseUrl) 
+
+    $__injectScript__({src: '/_static/js/chunk/require-pack-runtime.5e23136d.js' },function(){ require.config(REQUIRE_CONFIG);  require([ 'app-entry-saas-mina-platform/mina-qrcode' ]); });
+</script>
+</html>

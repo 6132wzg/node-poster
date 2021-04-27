@@ -1,0 +1,132 @@
+@import "./styles/base.less";
+.poster-activity {
+  height: 1334px;
+  position: relative;
+  background: #14143f;
+}
+.poster-activity-top {
+  width: 692px;
+  height: 335px;
+  background: url("./assets/images/activity-top.png") center no-repeat;
+}
+.poster-activity-tip {
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+  letter-spacing: 8px;
+  padding-top: 14px;
+  margin-bottom: 110px;
+  // border-top: 1px dashed #fff;
+}
+.poster-activity-card {
+  position: relative;
+  height: 584px;
+  width: 670px;
+  margin: 0 auto;
+  &__top {
+    position: absolute;
+    top: 103px;
+    width: 670px;
+    height: 168px;
+    background: url("./assets/images/activity-card-top.png") center/cover
+      no-repeat;
+  }
+  &__img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 590px;
+    height: auto;
+    background: #ccc;
+  }
+  &__bottom {
+    position: absolute;
+    top: 266px;
+    width: 670px;
+    height: 318px;
+    background: url("./assets/images/activity-card-bottom.png") center/cover
+      no-repeat;
+  }
+  &__name {
+    height: 45px;
+    line-height: 45px;
+    margin-top: 113px;
+    font-weight: 600;
+    font-size: 32px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  &__time {
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    font-size: 22px;
+    color: #dfdee4;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 9px;
+    &:nth-child(3) {
+      .poster-activity-card__icon {
+        margin-left: 8px;
+      }
+    }
+  }
+  &__icon {
+    margin-right: 11px;
+  }
+}
+.poster-activity-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 261px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 41px 40px 0;
+  width: 100%;
+  &__name {
+    height: 44px;
+    line-height: 44px;
+    margin-top: 33px;
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 26px;
+    font-size: 24px;
+    color: #222222;
+    display: flex;
+  }
+  &__logo {
+    margin-right: 12px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+  }
+  &__text {
+    height: 40px;
+    line-height: 40px;
+    color: #222;
+    font-size: 28px;
+  }
+  &__code {
+    width: 180px;
+    height: 180px;
+    background: #fff;
+    position: relative;
+    box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 0.1);
+  }
+  &__qrcode {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}

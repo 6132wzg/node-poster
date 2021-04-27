@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta class="viewport" name="viewport" content="width=750">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book 预约成功分享页</title>
+    <link rel="stylesheet" href="/_static/css/test.css?d63e5049" require-pack="">
+  </head>
+  <body>
+    <div id="app">
+      <div class="card-box">
+        <img class="background" src="https://x-wxrobot.oss-cn-shanghai.aliyuncs.com/imagetest/H5-product-1.jpg" alt="">
+        <img class="qrcode" src="https://x-wxrobot.oss-cn-shanghai.aliyuncs.com/onlineimg/app-logo.png" alt="">
+        <div class="user_info">
+            <img class="user_logo" src="https://x-wxrobot.oss-cn-shanghai.aliyuncs.com/onlineimg/app-logo.png" alt="">
+            <span class="user_name"></span>
+        </div>
+        
+      </div>
+    </div>
+    <script>
+      const $ = document.querySelector.bind(document)
+    </script>
+    <script require-pack="">
+var $__injectScript__ = function (attrs, cb) { var s = document.createElement('script');for (var k in attrs) { s.setAttribute(k, attrs[k]); } document.head.appendChild(s); s.onload = function () {cb && cb(); } };
+var process = process || {};process.env = process.env || {};process.env.NODE_ENV = 'development';
+var GIT = {"branch":"master","commit":"f2b4df34d7ec1542217f270e985f896b6beb5706 project init"};
+var REQUIRE_CONFIG = {"paths":{"qs":"_static/js/chunk/qs.12c56caa","lodash":"_static/js/chunk/lodash.fc723a73","app-entry-test":"_static/js/test.js?c4911ff9"},"shim":{},"map":{},"production":{"paths":{}}};  
+// -------------------
+REQUIRE_CONFIG.baseUrl = window.__require_public_url__ ||  "/";
+// -------------------
+console.log('[require-pack] dev mode,baseUrl is ',REQUIRE_CONFIG.baseUrl) 
+
+    $__injectScript__({src: '/_static/js/chunk/require-pack-runtime.5e23136d.js' },function(){ require.config(REQUIRE_CONFIG);  require([ 'app-entry-test' ]); });
+</script>
+  <script src="http://localhost:35729/livereload.js"></script></body>
+</html>

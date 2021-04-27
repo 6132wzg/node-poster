@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=750" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Checkin 签到成功分享页</title>
+    <link rel="stylesheet" href="./course.less" require-pack />
+    <link rel="stylesheet" href="./styles/course_theme.less" require-pack />
+  </head>
+  <body>
+    <div id="app">
+      <div class="card-box">
+        <section class="brand">
+          <div class="brand__hd">
+            <img
+              require-pack
+              class="brand__img"
+              src="./images/default_avatar.png"
+              alt="brand_logo"
+            />
+            <h1 class="brand__name">brand_name</h1>
+          </div>
+          <h3 class="brand__shop">shop_name</h3>
+          <p class="brand__text">shop_desc</p>
+        </section>
+        <section class="course">
+          <!-- 门店图片 -->
+          <div class="course__img"></div>
+          <h3 class="course__name">course_name</h3>
+          <p class="course__text">
+            已有<span class="course__count">course_count</span>人参与
+          </p>
+        </section>
+        <div class="card-box__divider"></div>
+        <section class="code">
+          <!-- 二维码图片 -->
+          <img class="code__img" alt='code_image'/>
+          <p class="code__text">长按二维码，一起来参加吧</p>
+        </section>
+      </div>
+    </div>
+
+    <script src="./course.js" require-pack></script>
+  </body>
+</html>

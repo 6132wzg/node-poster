@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=750" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>团课课表</title>
+    <link rel="stylesheet" href="./time_table.less" require-pack />
+  </head>
+
+  <body>
+    <div class="saas-time_table-poster">
+        <div class="saas-time_table-poster-bg">
+            <img
+            class="bg-image"
+            alt="bg_image" 
+            require-pack />
+            <div class="bg-default"></div>
+            <img class="bg-radian" src="./assets/images/timeTable_radian.png" require-pack />
+        </div>
+      
+        <div class="saas-time_table-poster-content">
+            <div class="time_table-info">
+                <div class="brand-logo">
+                    <img 
+                    class="brand-logo-img" 
+                    alt="logo"
+                    require-pack />
+                </div>
+                <div class="shop-desc">
+                    <div class="shop-name"></div>
+                    <div class="range-time"></div>
+                </div>
+                <div class="time_table-title"></div>
+            </div>
+            <div class="time_table-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>时间</td>
+                            <td>周一</td>
+                            <td>周二</td>
+                            <td>周三</td>
+                            <td>周四</td>
+                            <td>周五</td>
+                            <td>周六</td>
+                            <td>周日</td>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body"></tbody>
+                </table>
+            </div>
+            <div class="time_table-footer">
+                <div class="qrcode">
+                    <img class="qrcode-img" alt="qr_code" require-pack />
+                </div>
+                <div class="tips">
+                    <div class="tips-title">温馨提示</div>
+                    <div class="tips-info"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./time_table.js" require-pack></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=750">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分享海报</title>
+    <link rel="stylesheet" href="./treadmill.less" require-pack />
+</head>
+<body>
+  <div class="st-treadmill">
+    <div class="st-treadmill__cover-container">
+      <img class="st-treadmill__cover-map" require-pack src="./assets/images/treadmill-bg.png" />
+      <p id="date" class="st-treadmill__cover-date"></p>
+    </div>
+    <div class="st-treadmill__cover-pic"  id="cover_map">
+        <img class="st-treadmill__cover-line" id="line" require-pack />
+    </div>
+    <div class="st-treadmill__header">
+      <div class="st-treadmill__header-box">
+        <div class="st-treadmill__header-data__title">
+          <div class="st-treadmill__header-box__map" id="box_map">
+              <span class="fz-24 c-text" id="header_date1"></span>
+              <span class="fz-24 c-text"> - 路线长度 <span id="length"></span>，完成度
+              <span id="completionDegree1"></span>%
+              <div class="st-treadmill__header-box__distance font-number">
+                <span id="distance1" class="st-treadmill__header-box__distance-title"></span><span>km</span>
+              </div>
+          </div>
+          <div class="st-treadmill__header-box__target"  id="box_target">
+              <span class="fz-24 c-text" id="header_date2"></span>
+              <span class="fz-24 c-text"> - <span id="box_target-title"></span></span>
+              <div class="st-treadmill__header-box__distance font-number">
+                <span id="distance2" class="st-treadmill__header-box__distance-title"></span><span>km</span>
+              </div>
+          </div>
+          <div class="st-treadmill__header-box__run"  id="box_run">
+              <span class="fz-24 c-text" id="header_date3"></span>
+              <span class="fz-24 c-text"> - 快速开始 </span>
+              <div class="st-treadmill__header-box__distance font-number">
+                  <span id="distance3" class="st-treadmill__header-box__distance-title"></span><span>km</span>
+                </div>
+          </div>
+        </div>
+        <div class="st-treadmill__header-logo">
+          <img src="./assets/images/bg-logo.png" require-pack class="st-treadmill__header-logo__bg" />
+          <img require-pack class="st-treadmill__header-logo__img" id="avatar">
+        </div>
+        <div class="st-treadmill__header-title">
+          <div class="fz-24 c-title text-ellipsis font-medium st-treadmill__header-title-name" id="nickname"></div>
+          <div class="fz-24 c-text-light st-treadmill__header-title__address">
+            <span id="address"></span>
+          </div>
+        </div>
+      </div>
+      <div class="st-treadmill__header-data">
+        <div class="st-treadmill__header-data__content">
+          <div class="st-treadmill__header-data__content-item">
+            <div class="fz-40 font-number c_success" id="duration"></div>
+            <div class="fz-24 c-text">时长</div>
+          </div>
+          <div class="st-treadmill__header-data__content-item">
+            <div class="fz-40 font-number c_warning" id="kcal"></div>
+            <div class="fz-24 c-text">热量(Kcal)</div>
+          </div>
+          <div class="st-treadmill__header-data__content-item">
+            <div class="fz-40 font-number c_primary" id="speed"></div>
+            <div class="fz-24 c-text">配速</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="st-spacer st_hide" height="20rpx" id="spacer"></div>
+    <div class="st-treadmill__mission st_hide" id="progress">
+      <span class="fz-28 c-title font-medium" id="target_type">距离目标</span>
+      <div class="st-treadmill__mission-progress">
+        <div class="st-progress" style="height: 76px;">
+          <div class="st-progress__wrapper">
+            <div class="st-progress__inner" id="progressValue">
+              <div class="st-progress__inner-tip fz-22" id="progressTip">
+                <span id="completionNum"></span>
+                <div class="st-progress__inner-tip__arrow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="st-treadmill__mission-progress__text babes-font fz-26"><div class="st-treadmill__mission-progress__text-unit"><span class="target_value"></span><span class="unit"></span></div></div>
+      </div>
+      <div class="st-treadmill__mission-info c-text-light fz-24">
+        很遗憾没能完成本次目标，继续加油！
+      </div>
+    </div>
+    <div class="st-spacer" height="20px"></div>
+    <div class="st-treadmill__echarts-container">
+      <img class="st-treadmill__echarts-container__img" require-pack id="echart">
+    </div>
+    <div class="st-treadmill__code">
+      <img class="st-treadmill__code-img" id="code" require-pack>
+      <div></div>
+      <p class="st-treadmill__code-text st-treadmill__code-text1">开启有氧设备一起来运动吧</p><br/>
+      <p class="st-treadmill__code-text">长按二维码加入<span id="mp-name"></span></p>
+    </div>
+  </div>
+  <script src="./treadmill.js" require-pack></script>
+</body>
+</html>
